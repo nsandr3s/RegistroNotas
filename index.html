@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Calculadora de notas para calcular promedios basados en porcentajes. Ingresa tus notas y ponderaciones para ver tu promedio final.">
+    <meta name="author" content="nsandr3s">
+    <title>Sistema de Notas</title>
+    <!-- Enlace al archivo CSS para los estilos -->
+    <link rel="stylesheet" href="estilo.css">
+</head>
+
+<body>
+    <div class="contenedor">
+        <h1>Calcula tus promedios de notas por porcentajes</h1>
+
+        <!-- Contenedor para las notas -->
+        <div id="notas-container">
+            <div class="nota">
+                <!-- Campo para ingresar la primera nota -->
+                <label for="nota1">Nota 1</label>
+                <input type="number" id="nota1" class="nota-input" placeholder="0">
+
+                <!-- Campo para ingresar la ponderación de la primera nota -->
+                <input type="number" id="ponderacion1" class="ponderacion-input" placeholder="%" min="0" max="100">
+
+                <!-- Botón para eliminar esta nota -->
+                <button class="eliminar-nota">Eliminar</button>
+            </div>
+        </div>
+
+        <!-- Botón para agregar nuevas notas -->
+        <button id="agregar-nota">+ Agregar nota</button>
+        <br>
+
+        <!-- Botón para calcular el promedio -->
+        <button id="calcular">Calcular</button>
+        <br>
+
+        <!-- Contenedor para mostrar el resultado final -->
+        <div id="resultado" style="display: none;">
+            <p id="mensaje"></p>
+            <p id="promedio-final"></p>
+        </div>
+    </div>
+
+    <!-- Enlace al archivo JavaScript -->
+    <script src="script.js"></script>
+</body>
+
+</html>
